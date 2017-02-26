@@ -36,7 +36,7 @@ Composition:
         <CountryDropDown />
     </Address>
 </AddressCollection>
-```html
+```
 
 functional programming paradigm will need to be explored. There seems to be great perform benefit using
 first class functions and immutables.
