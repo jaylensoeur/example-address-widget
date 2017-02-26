@@ -44,6 +44,13 @@ address.setId('default_address');
 const addressCollectionController = new AddressCollectionController(addressFactory);
 addressCollectionController.addAddress(address);
 
+// you wont do this - but for testing purpose we'll use vanilla js
+const submitButton = document.getElementById('address-submit');
+submitButton.addEventListener('click', () => {
+    alert("Here:" + JSON.stringify(addressCollectionController.getAddressCollection()));
+    console.log(JSON.stringify(addressCollectionController.getAddressCollection()));
+});
+
 render(
     <AddressCollection controller={addressCollectionController} countries={dataCountries} defaultCountryCode="AU"/>,
     document.getElementById("react-container")

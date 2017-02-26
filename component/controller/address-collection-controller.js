@@ -38,7 +38,7 @@ export default class AddressCollectionWidgetController {
             this._addressCollection[address.getId()] = address;
         } else {
             const address = this._addressFactory.createInstance();
-            address.setId((new Date()).getTime());
+            address.setId((new Date()).getTime()); //use Object.id for now this is just an example
             this._addressCollection[address.getId()] = address;
         }
 
