@@ -2,6 +2,7 @@ import { Component } from 'react';
 import AddressLine from './address-widget/address-line';
 import StateDropDown from './address-widget/state-drop-down';
 import CountryDropDown from './address-widget/country-drop-down';
+import '../theme/app.scss';
 
 export default class Address extends Component {
     constructor(props) {

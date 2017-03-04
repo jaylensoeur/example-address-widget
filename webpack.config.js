@@ -1,4 +1,5 @@
 var webpack = require("webpack");
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: "./main.js",
@@ -17,6 +18,13 @@ module.exports = {
                 query: {
                     presets: ['es2015', 'react']
                 }
+            },
+            {
+                test: /\.scss$/,
+                loaders: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: 'css-loader'
+                })
             }
         ]
     },
@@ -25,6 +33,7 @@ module.exports = {
             sourceMap: true,
             warnings: false,
             mangle: true
-        })
+        }),
+        new ExtractTextPlugin('public/example-address-widget.css')
     ]
 };

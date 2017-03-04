@@ -84,6 +84,7 @@ export default class AddressCollection extends Component {
         return (
             <div>
                 {LABELS.CONTROLLER} <button onClick={() => this.addAddress()}>{LABELS.ADD}</button>
+                <br />
                 <span>{this._getAddressSection()}</span>
             </div>
         );

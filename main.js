@@ -1,7 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-
 import AddressCollection from './component/address-collection';
 import AddressFactory from './component/model/address-factory';
 import AddressCollectionController from './component/controller/address-collection-controller';

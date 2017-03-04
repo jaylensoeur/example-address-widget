@@ -1,0 +1,38 @@
+section {
+  display: inline-block;
+  width: 400px;
+  padding: 5px;
+  margin: 5px;
+}
+#address-submit {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#address-submit,
+.address-widget {
+  font-size: 1em;
+}
+.address-widget-address-line,
+.address-widget-state,
+.address-widget-country,
+.address-widget-city {
+  padding: 0 1em;
+  font-size: 1em;
+  padding: 5px
+}
+
+.address-widget-address-line {
+  width: 100%;
+  display: block;
+}
+.address-widget-country,
+.address-widget-state,
+.address-widget-city{
+  width: 30%;
+}
+
+.address-submit {
+
+}
+
