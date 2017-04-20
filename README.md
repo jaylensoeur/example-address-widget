@@ -38,5 +38,5 @@ Composition:
 </AddressCollection>
 ```
 
-functional programming paradigm will need to be explored. There seems to be great perform benefit using
+functional programming paradigm will need to be explored. There seems to be great performance benefit using
 first class functions and immutables.
